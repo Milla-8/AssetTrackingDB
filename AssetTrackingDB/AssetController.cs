@@ -240,9 +240,7 @@ namespace AssetTrackingDB
                 asset.Configuration = Console.ReadLine();
 
                 asset.PurchaseDate = GetValidPurchaseDate();
-
                 asset.Price = GetValidPrice();
-
                 asset.OfficeId = GetValidOfficeId();
 
                 try
@@ -264,7 +262,6 @@ namespace AssetTrackingDB
                 }
 
                 Console.WriteLine("Would you like to update more products? Y/N");
-
                 if (Helpers.Simplify(Console.ReadLine()) == "N")
                 {
                     ShowAssetList();
@@ -310,7 +307,6 @@ namespace AssetTrackingDB
                 }
 
                 Console.WriteLine("Would you like to remove more products? Y/N");
-
                 if (Helpers.Simplify(Console.ReadLine()) == "N")
                 {
                     ShowAssetList();
